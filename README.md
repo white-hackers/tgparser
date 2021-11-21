@@ -1,11 +1,11 @@
-🧾REST-ZONE.UR tgparser
-Telegram spamer, inviter and parser
+🧾WHITE-HAKER/RU tgparser
+Телеграмм spamer, Инвайтинг and Парсер
 ===================================
 <p align="center">
-  <img src="https://rest-zone.ru/demo/phot.jpg">
+  <img src="https://white-haker.ru/data/assets/logo/ico2.png">
 </p>
 
-# Installation
+# Установка
 * Windows:
   * Download Python 3.8 [here](https://www.python.org/downloads/release/python-38) 
   * Launch installer, click 'add python to PATH'
@@ -38,7 +38,7 @@ Telegram spamer, inviter and parser
   * `In Command Line run ***python setup.py -c***`
   * `Enter api_id, api_hash and phone number`
 
-# Usage
+# Запуск
 * Pars
   * `python pars.py`
 * Invite
