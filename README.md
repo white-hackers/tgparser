@@ -1,9 +1,9 @@
-🧾WHITE-HAKER.RU 
+🧾TUT.GURU
 ===================================
 Телеграмм спамер, Инвайтинг и Парсер
 ===================================
 <p align="center">
-  <img src="https://white-haker.ru/data/assets/logo/ico2.png">
+  <img src="https://tut.guru/data/assets/logo/ico2.png">
 </p>
 
 # Установка
