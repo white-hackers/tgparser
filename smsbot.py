@@ -25,7 +25,7 @@ class main():
 ░░░██║░░░██║░░░██║░░░██║░░░░░░██║░░╚██╗██║░░░██║██╔══██╗██║░░░██║
 ░░░██║░░░╚██████╔╝░░░██║░░░██╗╚██████╔╝╚██████╔╝██║░░██║╚██████╔╝
 ░░░╚═╝░░░░╚═════╝░░░░╚═╝░░░╚═╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝░
-TUT.GURU by https://tut.guru/
+by https://tut.guru/
             """)
 
     def send_sms():
@@ -48,7 +48,7 @@ TUT.GURU by https://tut.guru/
             client.send_code_request(phone)
             os.system('clear')
             main.banner()
-            client.sign_in(phone, input(gr+'[+] Enter the code: '+re))
+            client.sign_in(phone, input(gr+'[+] Введите код: '+re))
         
         os.system('clear')
         main.banner()
@@ -64,10 +64,10 @@ TUT.GURU by https://tut.guru/
                 user['access_hash'] = int(row[2])
                 user['name'] = row[3]
                 users.append(user)
-        print(gr+"[1] send sms by user ID\n[2] send sms by username ")
+        print(gr+"[1] отправка sms пользователем по ID\n[2] отправить sms по имени")
         mode = int(input(gr+"Input : "+re))
          
-        message = input(gr+"[+] Enter Your Message : "+re)
+        message = input(gr+"[+] Введите свое сообщение : "+re)
          
         for user in users:
             if mode == 2:
@@ -77,24 +77,24 @@ TUT.GURU by https://tut.guru/
             elif mode == 1:
                 receiver = InputPeerUser(user['id'],user['access_hash'])
             else:
-                print(re+"[!] Invalid Mode. Exiting.")
+                print(re+"[!] Недопустимый режим. выходящий.")
                 client.disconnect()
                 sys.exit()
             try:
-                print(gr+"[+] Sending Message to:", user['name'])
+                print(gr+"[+]Отправка сообщения на:", user['name'])
                 client.send_message(receiver, message.format(user['name']))
-                print(gr+"[+] Waiting {} seconds".format(SLEEP_TIME))
+                print(gr+"[+] Ожидание {} секунд".format(SLEEP_TIME))
                 time.sleep(1)
             except PeerFloodError:
-                print(re+"[!] Getting Flood Error from telegram. \n[!] Script is stopping now. \n[!] Please try again after some time.")
+                print(re+"[!] Получаю ошибку Flood от telegram. \n[!] Сценарий сейчас останавливается. \n[!] Пожалуйста, повторите попытку через некоторое время.")
                 client.disconnect()
                 sys.exit()
             except Exception as e:
-                print(re+"[!] Error:", e)
-                print(re+"[!] Trying to continue...")
+                print(re+"[!] Ошибка:", e)
+                print(re+"[!] Пытаюсь продолжить...")
                 continue
         client.disconnect()
-        print("Done. Message sent to all users.")
+        print("Сделано. Сообщение отправлено всем пользователям.")
 
 
 
