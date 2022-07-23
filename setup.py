@@ -23,7 +23,7 @@ def banner():
 ░░░██║░░░██║░░░██║░░░██║░░░░░░██║░░╚██╗██║░░░██║██╔══██╗██║░░░██║
 ░░░██║░░░╚██████╔╝░░░██║░░░██╗╚██████╔╝╚██████╔╝██║░░██║╚██████╔╝
 ░░░╚═╝░░░░╚═════╝░░░░╚═╝░░░╚═╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝░
-TUT.GURU by https://tut.guru/
+by https://tut.guru/
 	""")
 
 def requirements():
@@ -41,14 +41,14 @@ def requirements():
 		csv_lib()
 	else:
 		pass
-	print(gr+"[+] Installing requierments ...")
+	print(gr+"[+] Требования к установке ...")
 	os.system("""
 		pip3 install telethon requests configparser
 		python3 -m pip install telethon requests configparser
 		touch config.data
 		""")
 	banner()
-	print(gr+"[+] requierments Installed.\n")
+	print(gr+"[+] требования установлены.\n")
 
 
 def config_setup():
@@ -65,7 +65,7 @@ def config_setup():
 	setup = open('config.data', 'w')
 	cpass.write(setup)
 	setup.close()
-	print(gr+"[+] setup complete !")
+	print(gr+"[+] настройка завершена !")
 
 def merge_csv():
 	import pandas as pd
