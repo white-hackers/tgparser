@@ -24,7 +24,7 @@ def banner():
 ░░░██║░░░██║░░░██║░░░██║░░░░░░██║░░╚██╗██║░░░██║██╔══██╗██║░░░██║
 ░░░██║░░░╚██████╔╝░░░██║░░░██╗╚██████╔╝╚██████╔╝██║░░██║╚██████╔╝
 ░░░╚═╝░░░░╚═════╝░░░░╚═╝░░░╚═╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝░
-TUT.GURU by https://tut.guru/
+by https://tut.guru/
         """)
         
 
@@ -47,7 +47,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Enter the code: '+re))
+    client.sign_in(phone, input(gr+'[+] Введите код: '+re))
  
 os.system('clear')
 banner()
@@ -90,13 +90,13 @@ for group in groups:
     print(gr+'['+cy+str(i)+gr+']'+cy+' - '+group.title)
     i+=1
 
-print(gr+'[+] Choose a group to add members')
-g_index = input(gr+"[+] Enter a Number : "+re)
+print(gr+'[+] Выберите группу для добавления участников')
+g_index = input(gr+"[+] Введите номер : "+re)
 target_group=groups[int(g_index)]
  
 target_group_entity = InputPeerChannel(target_group.id,target_group.access_hash)
  
-print(gr+"[1] add member by user ID\n[2] add member by username ")
+print(gr+"[1] добавление участника по ID\n[2] Добавить участника по имени.")
 mode = int(input(gr+"Input : "+re)) 
 n = 0
 print(users)
@@ -114,16 +114,15 @@ for user in users:
 	        elif mode == 2:
 	            user_to_add = InputPeerUser(user['id'], user['access_hash'])
 	        else:
-	            sys.exit(re+"[!] Invalid Mode Selected. Please Try Again.")
+	            sys.exit(re+"[!] Выбран недопустимый режим. пожалуйста, попробуйте снова.")
 	        client(InviteToChannelRequest(target_group_entity,[user_to_add]))
-	        print(gr+"[+] Waiting for 10-30 Seconds...")
+	        print(gr+"[+] Ожидайте 10-30 секунд...")
 	        time.sleep(random.randrange(10, 30))
 	    except PeerFloodError:
-	        print(re+"[!] Getting Flood Error from telegram. \n[!] Script is stopping now. \n[!] Please try again after some time.")
+	        print(re+"[!] Получаю ошибку Flood от telegram. \n[!] Сценарий сейчас останавливается. \n[!] Пожалуйста, повторите попытку через некоторое время.")
 	    except UserPrivacyRestrictedError:
-	        print(re+"[!] The user's privacy settings do not allow you to do this. Skipping.")
+	        print(re+"[!] Настройки конфиденциальности пользователя не позволяют вам этого делать. Пропускаем.")
 	    except:
 	        traceback.print_exc()
-	        print(re+"[!] Unexpected Error")
+	        print(re+"[!] Непредвиденная ошибка")
 	        continue
-
