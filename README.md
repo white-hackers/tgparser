@@ -3,7 +3,7 @@
 Телеграмм спамер, Инвайтинг и Парсер
 ===================================
 <p align="center">
-  <img src="[https://downloader.disk.yandex.ru/preview/6c0c0c755828a2fa96aad64da3be3e5e84b275db7d9ab8c9b436ad39635a7bb2/62dc4955/5AF-szxvAniyOQi7Mg4djjcRclevLxS8Gi_2nqAfzp8juIrR7iskid2K283Iz_GPNXquCkoo2nuEQ0NSMba7dQ%3D%3D?uid=0&filename=68747470733a2f2f692e696d6775722e636f6d2f704b5530694f322e706e67.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048](https://downloader.disk.yandex.ru/preview/3db5a833c9f62f1b023068fd05a262fa4d003ef3c56b36e2a46cbd5058a5af2e/62dc4996/-CXPk9wu71UydjuR3lfXlqU1LTijes56jzgDO_naMLOE9PEMySNMI3xYHd7YGiFcEetampc216jnwljEpbKfrg%3D%3D?uid=0&filename=TET.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048)">
+  <img src="[https://downloader.disk.yandex.ru/preview/6c0c0c755828a2fa96aad64da3be3e5e84b275db7d9ab8c9b436ad39635a7bb2/62dc4955/5AF-szxvAniyOQi7Mg4djjcRclevLxS8Gi_2nqAfzp8juIrR7iskid2K283Iz_GPNXquCkoo2nuEQ0NSMba7dQ%3D%3D?uid=0&filename=68747470733a2f2f692e696d6775722e636f6d2f704b5530694f322e706e67.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048]">
 </p>
 
 # Установка
